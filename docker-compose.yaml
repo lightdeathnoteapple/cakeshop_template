@@ -1,0 +1,10 @@
+version: '3.0'
+services:
+  httpd-service:
+    build: .
+    ports:
+      - 80:80
+    volumes:
+      - cakeshop-vol:/usr/local/apache2/htdocs
+volumes:
+  cakeshop-vol:
